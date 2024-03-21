@@ -11,3 +11,6 @@ In this project, DummyClassifier is used as the baseline model which predicts th
 # Results and Discussion
 
 # Conclusion
+In conclusion, all models perform better than the baseline model and Random Forest has the best performance among the three algorithms. It is observed that models with scaled TFIDF and Embedding as the input features have better performance. Additionally, the classification reports reveal that the models have higher F1-scores for 0 and 9 salary bin. <br />
+Depending on the amount of unlabeled data added and the values of threshold and k_best, the classifier performance can fluctuate. However, it is observed that small threshold and large k_best could lead to worse model performance since classification errors are propagated. To address this issue, an approach that returns data points to the pool if the confidence level declines below a particular threshold could be applied.
+
