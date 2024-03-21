@@ -18,7 +18,7 @@ The accuracy and F1-scores of the baseline models using four types of input feat
     - The n_estimators and max_depth attributes are the two attributes used to tune the complexity of Random Forest model. In this project, the best model performance is achieved when n_estimators and max_depth are set to 400 and 40, respectively, with scaled TFIDF and Embedding as the input features. Combining TFIDF and Embedding as input features may improve performance because the model can utilize more features to partition the data and generate more accurate predictions. As n_estimators increases, accuracy generally improves, which demonstrates the effectiveness of ensemble learning. Nonetheless, once a certain threshold is reached (around n_estimators = 300), the performance could level off or even slightly decline. One possible explanation is that the correlation between trees increases when excessive number of decision trees are introduced, leading to lower performance. Figure 5 illustrates that as max_depth increases, the accuracy tends to increase since would be perfectly trained on the training data, and overfitting is more likely to occur, especially for models with larger n_estimators.
 
 Random Forest outperforms other algorithms since the ensemble algorithm is more complex and robust. It has the highest accuracy and F1-scores on validation set. Nevertheless, the training time is significantly longer than the others as shown below.
-![image](https://github.com/W-Hsieh/Salary-Prediction/assets/142127312/cc3a9b28-b825-4766-862c-e30445d3b9c2)
+![result](https://github.com/W-Hsieh/Salary-Prediction/assets/142127312/ea6b8565-a9ef-470e-ac91-d39b5240a104)
 
 
 # Conclusion
